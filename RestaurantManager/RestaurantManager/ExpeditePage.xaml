@@ -9,9 +9,20 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="0.9*"></RowDefinition>
+            <RowDefinition Height="0.1*"></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBlock x:Name="txtClearOrders" Grid.Row="1" HorizontalAlignment="Center" Margin="0 10">**Clear All Orders**</TextBlock>
+        <AppBar x:Name="apbMain" Grid.Row="0">
+            <AppBarButton x:Name="apbbHome" Icon="Home" Label="Home" Click="apbbHome_Click">
+
+            </AppBarButton>
+        </AppBar>
+        <GridView x:Name="grvOrders" Grid.Row="1">
+            
+        </GridView>
+        <Button x:Name="txtClearOrders" Grid.Row="2" HorizontalAlignment="Center" Margin="0 10">
+            <Button.Content>Clear All Orders</Button.Content>
+        </Button>
     </Grid>
 </Page>

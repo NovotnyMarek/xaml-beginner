@@ -20,17 +20,28 @@
             <ColumnDefinition Width="0.25*"></ColumnDefinition>
             <ColumnDefinition Width="0.25*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
+        <AppBar x:Name="apbMain" Grid.Row="0" Grid.ColumnSpan="3">
+            <AppBarButton x:Name="apbbHome" Icon="Home" Label="Home" Click="apbbHome_Click">
+
+            </AppBarButton>
+        </AppBar>
+        <ListView x:Name="lvw" Grid.Column="0" Grid.Row="1" Grid.RowSpan="3">
+            
+        </ListView>
         <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top">
             Special Requests:
         </TextBlock>
         <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top">
             Order Items:
         </TextBlock>
-        <TextBlock x:Name="txtAddToOrder" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0">
-            **Add to Order**
-        </TextBlock>
-        <TextBlock x:Name="txtSubmitOrder" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0">
-            **Submit Order**
-        </TextBlock>        
+        <ListView x:Name="lvwItems" Grid.Column="2" Grid.RowSpan="2" Grid.Row="2">
+            
+        </ListView>
+        <Button x:Name="txtAddToOrder" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0">
+            <Button.Content>Add to Order</Button.Content>
+        </Button>
+        <Button x:Name="txtSubmitOrder" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0">
+            <Button.Content>Submit Order</Button.Content>
+        </Button>
     </Grid>
 </Page>
