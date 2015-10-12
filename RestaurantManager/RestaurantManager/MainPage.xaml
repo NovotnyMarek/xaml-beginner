@@ -20,7 +20,7 @@
         <TextBlock x:Name="txtTitle" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Bottom">
                 Restaurant Manager
         </TextBlock>
-        <TextBlock x:Name="txtIntVer" Grid.Row="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="24" Margin="0 20 0 0">
+        <TextBlock x:Name="txtIntVer" Grid.Row="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0 20 0 0">
                 Internal Test Version
         </TextBlock>
         <Button x:Name="btnGoToOrders" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnGoToOrders_Click">
